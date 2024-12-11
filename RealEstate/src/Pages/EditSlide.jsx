@@ -195,6 +195,7 @@ const EditSlidesForm = () => {
                     type="file"
                     onChange={(e) => handleFileChange(e, slide._id)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    name="backgroundImage"
                   />
                 )}
               </div>
