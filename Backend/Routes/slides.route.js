@@ -25,7 +25,7 @@ router.post('/slides', upload.single('backgroundImage'), async (req, res) => {
     
     if (req.file) {
       // If file was uploaded
-      backgroundImagePath = `./uploads/${req.file.filename}`;
+      backgroundImagePath = `/uploads/${req.file.filename}`;
     } else if (req.body.backgroundImageURL) {
       // If URL was provided
       backgroundImagePath = req.body.backgroundImageURL;
