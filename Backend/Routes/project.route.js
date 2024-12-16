@@ -24,7 +24,7 @@ const upload = multer({
 });
 
 // Upload image endpoint
-router.post('/upload', upload.single('image'), (req, res) => {
+router.post('/upload', upload.single('backgroundImage'), (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({ message: 'No file uploaded' });
